@@ -1,127 +1,195 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Filmotopia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Domů</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Tip na film</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Redakce</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
     <div class="container">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Slider.png" class="d-block w-100 d-none d-sm-block" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h1 class="bg-primary fw-normal d-inline-flex py-2 px-4 display-4" style="max-width: fit-content;">Kočky a
-                psi
-              </h1>
-              <p>Slider s nejnovějšími filmovými novinkami!</p>
+      <a class="navbar-brand" href="#">Filmotopia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Tip na film</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Redakce</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Slider.png" class="d-block w-100 d-none d-sm-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="bg-primary fw-normal d-inline-flex py-2 px-4 display-4" style="max-width: fit-content;">Kočky a
+              psi
+            </h1>
+            <p>Slider s nejnovějšími filmovými novinkami!</p>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1 class="container pt-4 pb-4">Na co se vydat do kina</h1>
+      <div class="row row-cols-1 row-cols-xxl-3 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/obr6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wall-E</h5>
+              <p class="card-text d-none d-xxl-block">Dechberoucí příběh o jednom malém robotovi, který se rozhodl
+                zachránit svět.</p>
+              <a href="#" class="btn btn-primary">Více o filmu</a>
             </div>
           </div>
-  
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-  
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="img/obr1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hra</h5>
+              <p class="card-text d-none d-xxl-block">Jaký dar dát člověku, který má všechno? Možná strach o vlastní
+                život, který mu
+                změní svět.</p>
+              <a href="#" class="btn btn-primary">Více o filmu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="img/obr2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Policajt ze školky</h5>
+              <p class="card-text d-none d-xxl-block">Arnold Schwarzenegger ve své životní roli, kdo myslíte, že
+                vyhraje?</p>
+              <a href="#" class="btn btn-primary">Více o filmu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="img/obr3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mýval Miloš</h5>
+              <p class="card-text d-none d-xxl-block">Dojemný příběh o učiteli, který nevěděl kdy přestat. Nakonec
+                našel lásku.</p>
+              <a href="#" class="btn btn-primary">Více o filmu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="img/obr4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Barevná smršť</h5>
+              <p class="card-text d-none d-xxl-block">Kdo je to grafik a proč by nás měl zajímat? Jeden student oboru
+                grafika se vydal na
+                cestu zla.</p>
+              <a href="#" class="btn btn-primary">Více o filmu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="img/obr5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Utíkej jako o život</h5>
+              <p class="card-text d-none d-xxl-block">Může špatný design způsobit psychickou újmu? Existuje něco jako
+                příliš mnoho barev?
+              </p>
+              <a href="#" class="btn btn-primary">Více o filmu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="container mt-6">Nejnovější recenze našich kritiků</h1>
+
+<div>
+  <h2></h2>
+  <div>
+    <div>
+      <img src="img/avatar.png" alt="">
+    </div>
+    <div>
+    <h3></h3>
+    <p></p>
+    </div>
+  </div>
+</div>
+
+      <h1 class="container mt-6"> Chcete se stát naším kritikem? Napište nám!</h1>
+
+      <form class="col-md-mx col-xxl-6">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Vaše e-mailová adresa</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="martinez@cupakabra.com">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Vaše jméno</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ricky Martin">
+        </div>
+        <label for="formGroupExampleInput" class="form-label">Napište, proč byste se chtěl stát kritikem</label>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px"></textarea>
+        </div>
+          <div class="form-check pt-4">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Souhlasím se zpracováním osobních údajů
+            </label>
+          </div>
+        <button type="submit" class="btn btn-primary mt-4">Odeslat</button>
+      </form>
         
-      <div class="card container">
-        <img src="img/obr1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Hra</h5>
-          <p class="card-text">
-            Jaký dar dát člověku, který má všechno? Možná strach o vlastní
-            život, který mu změní život.
-          </p>
-          <a href="#" class="btn btn-primary">Více o filmu</a>
-        </div>
-      </div>
-      <div class="card container">
-        <img src="img/obr2.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Policajt ze školky</h5>
-          <p class="card-text">
-            Arnold Scwarznegger ve své životní roli, kdo myslíte, že vyhraje?
-          </p>
-          <a href="#" class="btn btn-primary">Více o filmu</a>
-        </div>
-      </div>
-    </div>
+        
+  
 
-    <div class="containers"></div>
-    <div class="card container">
-      <img src="img/obr3.png" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Míval Miloš</h5>
-        <p class="card-text">
-          Dojemný příběh o učiteli, který nevěděl kdy přetsat. Nakonec našel
-          lásku.
-        </p>
-        <a href="#" class="btn btn-primary">Více o filmu</a>
-      </div>
-    </div>
-    <div class="card container">
-      <img src="img/obr4.png" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Barevná smršť</h5>
-        <p class="card-text">
-          Kdo je to grafik a proč nás měl zajímat? Jeden stundent oboru grafika
-          se vydal na cestu zla.
-        </p>
-        <a href="#" class="btn btn-primary">Více o filmu</a>
-      </div>
-    </div>
-    <div class="card container">
-      <img src="img/obr5.png" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">Utíkej jako o život</h5>
-        <p class="card-text">Může špatný design způsobit psychickou újmu?</p>
-        <p class="card-text">Existuje něco jako mnoho barev?</p>
-        <a href="#" class="btn btn-primary">Více o filmu</a>
-      </div>
-    </div></div>
+      <footer class="text-center mt-4 bg-secondary text-white">
+        <div class="footer">
+          <p class="p-3" style="margin-bottom: 0; padding-bottom: 0;">Tuto práci vypracovala Nikola Eisenhammerová, 2.G,
+            datum</p>
+        </div>
+      </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
